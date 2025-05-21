@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+    <link rel="stylesheet" href="avaliação.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <header>
+        <div class="logo">Sabores dos Estados Unidos</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#cardapio">Cardápio</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#ambiente">Ambiente</a></li>
+                <li><a href="reserva.html">Reservas</a></li>
+                <li><a href="avaliacao.html">Avaliações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="avaliacao-hero">
+        <h1>Avaliações dos Clientes</h1>
+        <p>Compartilhe sua experiência e leia o que outros clientes acharam do nosso restaurante</p>
+    </section>
+
+    <div class="avaliacao-container">
+        <!-- Formulário de Avaliação -->
+        <div class="avaliacao-form-container">
+            <i class="fas fa-utensils decoration decoration-1"></i>
+            <i class="fas fa-hamburger decoration decoration-2"></i>
+            
+            <div class="form-header">
+                <h2>Deixe sua avaliação</h2>
+                <p>Sua opinião é muito importante para nós!</p>
+            </div>
+
+            <form class="avaliacao-form">
+                <div class="form-group">
+                    <label for="nome">Seu nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Seu e-mail (não será publicado)</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Sua avaliação</label>
+                    <div class="rating-container">
+                        <i class="fas fa-star rating-star" data-rating="1"></i>
+                        <i class="fas fa-star rating-star" data-rating="2"></i>
+                        <i class="fas fa-star rating-star" data-rating="3"></i>
+                        <i class="fas fa-star rating-star" data-rating="4"></i>
+                        <i class="fas fa-star rating-star" data-rating="5"></i>
+                        <input type="hidden" id="rating" name="rating" value="0">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Título da avaliação</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Seu comentário</label>
+                    <textarea id="comentario" name="comentario" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Avaliação</button>
+            </form>
+        </div>
+
+        <!-- Lista de Avaliações -->
+        <div class="avaliacoes-list">
+            <div class="avaliacoes-header">
+                <h2>O que nossos clientes dizem</h2>
+            </div>
+
+            <div class="avaliacoes-grid">
+                <!-- Avaliação 1 -->
+                <div class="avaliacao-card">
+                    <div class="avaliacao-header">
+                        <div class="avaliacao-user">
+                            <div class="user-avatar">M</div>
+                            <div class="user-info">
+                                <h4>Marcos Silva</h4>
+                                <p>Cliente frequente</p>
+                            </div>
+                        </div>
+                        <div class="avaliacao-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="avaliacao-content">
+                        <h3>Experiência incrível!</h3>
+                        <p>O hambúrguer é simplesmente o melhor da cidade! A carne estava suculenta e o pão fresquinho. O ambiente tem um charme retrô que me transportou para uma diner americana dos anos 50. Recomendo muito!</p>
+                    </div>
+                    <div class="avaliacao-date">15/03/2025</div>
+                </div>
+
+                <!-- Avaliação 2 -->
+                <div class="avaliacao-card">
+                    <div class="avaliacao-header">
+                        <div class="avaliacao-user">
+                            <div class="user-avatar">A</div>
+                            <div class="user-info">
+                                <h4>Ana Paula</h4>
+                                <p>Primeira visita</p>
+                            </div>
+                        </div>
+                        <div class="avaliacao-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="avaliacao-content">
+                        <h3>Muito bom, mas...</h3>
+                        <p>Adorei a torta de maçã, realmente autêntica! O serviço foi ótimo, mas achei o preço um pouco salgado para algumas opções do cardápio. Voltaria para experimentar outras sobremesas.</p>
+                    </div>
+                    <div class="avaliacao-date">10/12/2024</div>
+                </div>
+
+                <!-- Avaliação 3 -->
+                <div class="avaliacao-card">
+                    <div class="avaliacao-header">
+                        <div class="avaliacao-user">
+                            <div class="user-avatar">R</div>
+                            <div class="user-info">
+                                <h4>Ricardo Gomes</h4>
+                                <p>Aniversariante</p>
+                            </div>
+                        </div>
+                        <div class="avaliacao-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="avaliacao-content">
+                        <h3>Festa inesquecível</h3>
+                        <p>Celebrei meu aniversário com amigos e foi perfeito! A equipe decorou nossa mesa com balões e nos surpreendeu com uma sobremesa especial. As costelas barbecue são imperdíveis!</p>
+                    </div>
+                    <div class="avaliacao-date">05/03/2025</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <script>
+        // Sistema de avaliação por estrelas CORRIGIDO
+        document.addEventListener('DOMContentLoaded', function() {
+            const stars = document.querySelectorAll('.rating-star');
+            const ratingInput = document.getElementById('rating');
+            
+            // Inicializa todas as estrelas como vazias
+            stars.forEach(star => {
+                star.classList.add('far'); // Estrela vazia
+                star.classList.remove('fas'); // Remove estrela cheia se existir
+            });
+            
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const rating = this.getAttribute('data-rating');
+                    ratingInput.value = rating;
+                    
+                    // Atualizar visualização das estrelas
+                    stars.forEach((s, index) => {
+                        if (index < rating) {
+                            s.classList.remove('far');
+                            s.classList.add('fas');
+                            s.classList.add('active');
+                        } else {
+                            s.classList.remove('fas');
+                            s.classList.add('far');
+                            s.classList.remove('active');
+                        }
+                    });
+                });
+                
+                // Efeito hover
+                star.addEventListener('mouseover', function() {
+                    const hoverRating = this.getAttribute('data-rating');
+                    stars.forEach((s, index) => {
+                        if (index < hoverRating) {
+                            s.classList.add('hover');
+                        } else {
+                            s.classList.remove('hover');
+                        }
+                    });
+                });
+                
+                star.addEventListener('mouseout', function() {
+                    stars.forEach(s => {
+                        s.classList.remove('hover');
+                    });
+                });
+            });
+            
+            // Simular envio do formulário
+            const form = document.querySelector('.avaliacao-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Obrigado por sua avaliação! Ela será publicada após moderação.');
+                form.reset();
+                
+                // Resetar estrelas
+                stars.forEach(star => {
+                    star.classList.remove('active');
+                    star.classList.remove('fas');
+                    star.classList.add('far');
+                });
+                ratingInput.value = '0';
+            });
+        });
+    </script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <p>Terça a Quinta: 12h - 22h</p>
+                <p>Sexta e Sábado: 12h - 23h</p>
+                <p>Domingo: 12h - 21h</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Localização</h3>
+                <p>Rua Antônio Pinto de Oliveira, 153</p>
+                <p>Vila Dom Pedro II, São Paula - SP</p>
+                <p>CEP: 03243-050</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (11) 99501-1155</p>
+                <p><i class="fas fa-envelope"></i> danielvararibeiro@gmail.com</p>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 Sabores dos Estados Unidos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
